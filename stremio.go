@@ -5,7 +5,7 @@ import "net/http"
 type ProviderInterface interface {
 	GetManifest(w http.ResponseWriter, r *http.Request, token string) *AddonManifest
 
-	GetCatalog(w http.ResponseWriter, r *http.Request, token string) *MetaList
+	GetCatalog(w http.ResponseWriter, r *http.Request, token string) *MetaPreviewList
 
 	GetMeta(w http.ResponseWriter, r *http.Request, token string) *Meta
 
